@@ -1,0 +1,32 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    "schedule:weekly",
+    ":preserveSemverRanges",
+    "helpers:disableTypesNodeMajor"
+  ],
+  "labels": ["dependencies"],
+  "enabledManagers": ["npm", "github-actions"],
+  "ignoreDeps": ["googleapis", "react-phone-number-input"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "enabled": false,
+      "stabilityDays": 14,
+      "internalChecksFilter": "strict"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "enabled": false,
+      "matchPackagePatterns": ["mantine"],
+      "groupName": "mantine"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "enabled": false,
+      "matchPackagePatterns": ["temporalio"],
+      "groupName": "temporalio"
+    }
+  ]
+}
