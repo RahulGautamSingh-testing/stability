@@ -13,20 +13,12 @@
     {
       "matchUpdateTypes": ["minor", "patch"],
       "enabled": false,
-      "stabilityDays": 14,
       "internalChecksFilter": "strict"
     },
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "enabled": false,
-      "matchPackagePatterns": ["mantine"],
-      "groupName": "mantine"
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "enabled": false,
-      "matchPackagePatterns": ["temporalio"],
-      "groupName": "temporalio"
+     {
+      "matchUpdateTypes": ["major"],
+      "stabilityDays": 14,
+      "internalChecksFilter": "strict"
     }
   ]
 }
