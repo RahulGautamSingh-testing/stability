@@ -16,7 +16,7 @@
     },
      {
       "matchUpdateTypes": ["major"],
-      "stabilityDays": 1,
+      "stabilityDays": 15,
       "internalChecksFilter": "strict"
     }
   ]
